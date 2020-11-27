@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<htmt>
+<head>
+    <title>control de select</title>
+<script src="../jquery-3.5.1.js"></script>
+</head>
+<body>
+
+<select id="miselect">
+    <option value="">selecciona</option>
+    <option value="1">valor 1</option>
+    <option value="2">valor 2</option>
+    <option value="3">valor 3</option>   
+</select>    
+
+    <button id="miboton">seleccion en select</button>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+         $('#select').val('2');
+         $('#miboton').click(function(){
+             alert($('#miselect').val());
+          });
+    });
+</script>
+
+
